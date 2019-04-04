@@ -1,3 +1,8 @@
+# Calculate average bottleneck value across order parameter (Xi1, Xi2)
+#
+
+
+
 import numpy as np
 from scipy import stats
 

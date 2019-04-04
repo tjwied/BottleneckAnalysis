@@ -1,3 +1,7 @@
+# Calculate Free Energy of Clamshell closure as a function of threshold value
+# Usage: python free-energy.py
+
+
 import numpy
 from numpy import *
 bottleneck = loadtxt('pmf-2d-mean-gluk2.dat')
@@ -8,6 +12,8 @@ Po = 0
 Pc = 0
 kBT = 0.001987191 * 300
 pmf = loadtxt('pmf-2d_gp_apo.dat')
+
+#Iterate over bottleneck thresholds, from 6 - 23 Angstroms, and calculate Free Energy for each
 for i in range(60, 230):
 	Po = 0
 	Pc = 0
